@@ -25,7 +25,7 @@
 }
 };
 
-// Check if the strings in the compute function will contain DNA letters
+// Check if the strings in the compute function will contain only DNA letters
 const check = (string) =>{
   const dnaLetters = [`C`,`T`,`A`,`G` ];
   let validation = 0;

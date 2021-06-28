@@ -109,6 +109,7 @@ button {
     align-items: center;
 }
 
+/*Little responsiveness styling  */
 @media (max-width: 459px) {
     .dna-strands {
         flex-direction: column;
