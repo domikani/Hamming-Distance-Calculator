@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* General styling rules */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    background: radial-gradient(circle, rgba(210, 226, 233, .8) 0%, rgba(121, 138, 184, .8) 61%, rgba(112, 148, 158, .8) 100%), url("assets/images/dna-3544.svg");
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Output section styling */
+.output-title {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.output-box {
+    border: solid 1px lightgrey;
+    height: 80px;
+    text-align: center;
+}
+
+.hamming-distance {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.error {
+    color: red;
+}
+
+
+/* Form styling */
+.container {
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 25px;
+    background: #F2F2F2;
+    width: 100%;
+}
+
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container .subtitle {
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+/*Inputs styling */
+.dna-strands {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 15px;
+}
+
+.inputs {
+
+    width: calc(100% / 2 - 20px);
+
+}
+
+.inputs input {
+    width: 100%;
+    height: 25px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    border-bottom-width: 2px;
+}
+
+.inputs input:focus {
+    border-color: rgba(24, 138, 141, 1);
+}
+
+/*Buttons styling */
+button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(109.6deg, rgba(96, 221, 142, 1) 11.2%, rgba(24, 138, 141, 1) 91.1%);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 459px) {
+    .dna-strands {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .inputs input {
+        font-size: 10px;
+    }
+
+    .container .subtitle {
+        display: none;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamming Distance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="title">Hamming Distance DNA Calculator</div>
+    <div class="subtitle">Calculate the distance between two DNA strands</div>
+    <form id="my-form">
+        <div class="dna-strands">
+            <div class="inputs">
+                <span class="description">First DNA strand</span>
+                <input type="text" placeholder="Enter a DNA strand" id="dna-string-a">
+            </div>
+            <div class="inputs">
+                <span class="description">Second DNA strand</span>
+                <input type="text" id="dna-string-b" placeholder="Enter a DNA strand">
+            </div>
+        </div>
+        <div class="output-title">Output</div>
+        <div id="box-border" class="output-box">
+            <p class="output-text" id="result"></p>
+        </div>
+        <div class="button">
+            <button type="button" id="show-result-cta">Calculate distance</button>
+            <button type="button" id="clear-form">Clear Form</button>
+        </div>
+    </form>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+
+</html>
